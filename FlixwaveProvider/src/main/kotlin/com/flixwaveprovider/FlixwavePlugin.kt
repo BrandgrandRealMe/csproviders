@@ -1,4 +1,4 @@
-package com.example
+package com.flixwaveprovider
 
 import com.lagradost.cloudstream3.plugins.CloudstreamPlugin
 import com.lagradost.cloudstream3.plugins.Plugin
