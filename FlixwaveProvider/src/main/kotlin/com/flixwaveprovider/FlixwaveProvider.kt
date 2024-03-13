@@ -3,6 +3,15 @@ package com.example
 import com.lagradost.cloudstream3.TvType
 import com.lagradost.cloudstream3.MainAPI
 import com.lagradost.cloudstream3.SearchResponse
+import com.fasterxml.jackson.annotation.JsonProperty
+import com.lagradost.cloudstream3.*
+import com.lagradost.NineAnimeApi.decodeVrf
+import com.lagradost.NineAnimeApi.encode
+import com.lagradost.NineAnimeApi.encodeVrf
+import com.lagradost.cloudstream3.utils.AppUtils.parseJson
+import com.lagradost.cloudstream3.utils.ExtractorLink
+import com.lagradost.cloudstream3.utils.loadExtractor
+import org.jsoup.Jsoup
 
 class FlixwaveProvider : MainAPI() { // all providers must be an instance of MainAPI
     override var mainUrl = "https://www.flixwave.cc/" 
